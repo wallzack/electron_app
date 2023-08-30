@@ -4,11 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron main.js",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "electron": "^8.2.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  }
+    "react-dom": "^16.8.6",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
